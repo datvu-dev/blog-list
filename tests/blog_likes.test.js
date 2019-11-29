@@ -59,7 +59,7 @@ const bigBlogList = [
         url: "http://blog.cleancoder.com/uncle-bob/2016/05/01/TypeWars.html",
         likes: 2,
         __v: 0
-    }  
+    }
 ]
 
 test('dummy returns one', () => {
@@ -81,9 +81,9 @@ describe('total likes', () => {
     })
 
     test('of a bigger list is calculated right', () => {
-      const result = totalLikes(bigBlogList)
-      expect(result).toBe(36)
-  })
+        const result = totalLikes(bigBlogList)
+        expect(result).toBe(36)
+    })
 })
 
 describe('favorite blog', () => {
@@ -96,5 +96,5 @@ describe('favorite blog', () => {
     test('return the blog with most likes', () => {
         const result = favoriteBlog(bigBlogList)
         expect(result).toEqual(blog)
-  })
+    })
 })
